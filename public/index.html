@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Magic Notes || Projects # 1</title>
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css"
+        integrity="sha384-B0vP5xmATw1+K9KRQjQERJvTumQW0nPEzvF6L/Z6nronJ3oUOFUFpCjEUQouq2+l" crossorigin="anonymous">
+    <!-- Bootstrap Fonts -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css">
+    <!-- Add Favicon -->
+    <link rel="shortcut icon" type="image/jpg" href="notes.png" />
+</head>
+
+<body>
+    <!-- NavBar Start -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <a class="navbar-brand" href="#"><i class="bi bi-pencil-square" style="font-size: 1.5rem;">Magic Notes</i></a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav mr-auto">
+                <li class="nav-item active">
+                    <a class="nav-link" href="#" style="font-size: 1.2rem;">Home <span class="sr-only"></span></a>
+                </li>
+            </ul>
+            <form class="form-inline my-2 my-lg-0">
+                <input class="form-control mr-sm-2" id="searchTxt" type="search" placeholder="Search"
+                    aria-label="Search">
+                <button class="btn btn-outline-light bg-primary my-2 my-sm-0" type="submit">Search</button>
+            </form>
+        </div>
+    </nav>
+    <!-- NavBar End -->
+    <!-- Add Notes Start  -->
+    <div class="container my-3">
+        <h1>Welcome To Magic Notes.</h1>
+        <div class="card">
+            <div class="card-body">
+                <div class="form-group">
+                    <h4 class="card-title">Add Title</h4>
+                    <input type="text" class="form-control" id="addTitle" placeholder="Enter Your Title" aria-describedby="emailHelp">
+                </div>
+                <h2 class="card-title">Add Notes</h2>
+                <div class="form-group">
+                    <textarea class="form-control" id="addTxt" placeholder="Enter Your Notes" rows="3"></textarea>
+                </div>
+                <button class="btn btn-primary" id="addBtn">Add Notes</button>
+            </div>
+        </div>
+    </div>
+    <div class="container">
+        <hr>
+        <h1><i class="bi bi-journal-check"></i>Your Notes</h1>
+        <hr>
+    </div>
+    <!-- Add Notes End  -->
+    <!-- Card Start  -->
+    <div class="container">
+        <div id="notes" class="container-fluid row">
+        </div>
+    </div>
+    <!-- Card End  -->
+    <!-- My JS -->
+    <script src="app.js"></script>
+
+    <!-- Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+        integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-Piv4xVNRyMGpqkS2by6br4gNJ7DXjqk09RmUpJ8jgGtD7zP9yug3goQfGII0yAns"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>
